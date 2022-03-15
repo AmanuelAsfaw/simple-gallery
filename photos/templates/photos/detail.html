@@ -1,0 +1,8 @@
+
+<h1>{{ gallery.title }}</h1>
+<p>{{ gallery.description }}</p>
+<ul>
+{% for choice in gallery.photo_set.all %}
+    <li>{{ choice.title }}</li>
+{% endfor %}
+</ul>
